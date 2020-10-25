@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forum</title>
+</head>
+<body>
+    <form>
+        <div id="heading">Student Registration Form</div>
+            <content>
+                <p style="font-size:20px;">PERSONAL INFORMATION<hr /></p>
+                    <table>
+                        <tr>
+                            <td id="label">
+                                    <label for="ad">ADDRESS</label>
+                            </td>
+                            <td>:
+                                <input type="text" id="ad" name="ad">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="label">
+                                    <label for="tgllahir">tanggal Lahir</label>
+                            </td>
+                            <td colspan="3">:
+                                <input type="date" id="birthday" name="birthday">
+                            </td>
+                        </tr>
+                    </table>
+                <p style="font-size:20px;">CONTACT INFORMATION<hr /></p>
+                    <table>
+                        <tr>
+                            <td id="label">
+                                    <label for="ad">ADDRESS</label>
+                            </td>
+                            <td>:
+                                <input type="text" id="ad" name="ad">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="label">
+                                    <label for="city">CITY</label>
+                            </td>
+                            <td>:
+                                <input type="text" name"city"/>
+                            </td>
+                            <td id="label">
+                                <label for="ps">PROVINCE/STATE</label>
+                            </td>
+                            <td>:
+                                <input type="text" name"ps"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="label">
+                                    <label for="zc">ZIP CODE</label>
+                            </td>
+                            <td>:
+                                <input type="text" name"zc"/>
+                            </td>
+                            <td id="label">
+                                <label for="c">COUNTRY</label>
+                            </td>
+                            <td>:
+                                <input type="text" name"c"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="label">
+                                    <label for="phone">PHONE</label>
+                            </td>
+                            <td>:
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                            </td>
+                            <td id="label">
+                                <label for="e">EMAIL</label>
+                            </td>
+                            <td>:
+                                <input type="text" name"e"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="label"><label for="mt">MEBERSHIP TYPE</label></td>
+                            <td colspan="3">:
+                                <input type="radio" name="mt" value="Regular">Regular
+                                <input type="radio" name="mt" value="Premium">Premium
+                                <input type="radio" name="mt" value="VIP">VIP
+                        </td>
+                        </tr>
+                    </table>
+                <p style="font-size:20px;">COURSE INFORMATION<hr /></p>
+                    <table>
+                        <tr>
+                            <td id="label">
+                                    <label for="cn">COURSE NAME</label>
+                            </td>
+                            <td>:
+                                    <input type="text" id="cn" name="cn">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="label"><label for="pd">PAYMENT DETAILS</label></td>
+                            <td colspan="3">:
+                                    <input type="radio" name="pd" value="Cash">Cash
+                                    <input type="radio" name="pd" value="Cheque">Cheque
+                                    <input type="radio" name="pd" value="Credit Card">Credit Card
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="label">
+                                <label for="comment">COMMENT</label></td>
+                            <td colspan="3">
+                                <textarea wicket:id="comment" rows="6" cols="40"></textarea>
+                        </td>
+                            
+                        </tr>
+                    </table>
+                <br>
+            <input type="submit" value="Submit">
+        <input type="reset">
+  </form>
+<p>Tanggal/Waktu: <span id="tanggalwaktu"></span></p>
+    
+    <script>
+    var dt = new Date();
+    document.getElementById("tanggalwaktu").innerHTML = dt.toLocaleDateString();
+    </script>
+
+</body>
+</html>
