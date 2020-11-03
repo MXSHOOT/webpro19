@@ -1,0 +1,76 @@
+ul {
+    list-style-type: upper-roman;
+  }
+
+table.list tr td {
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+    width: auto;
+}
+
+.content{
+    text-align: justify;
+    text-decoration: none;
+    line-height: normal;
+    font-weight: 100;
+    font-style: italic;
+}
+
+body {
+    position: fixed;
+    float: none;
+    display: contents;
+    background: fixed;
+    background-color: beige;
+    background-image: none;
+}
+
+#isi {
+    color:#999;
+    font-size:36px;
+    font-weight:bold;
+    padding-top:2px;  
+    bottom:90%;
+    display:block;
+    text-align: center;
+  }
+
+#flip {
+    height:50px;
+    overflow:hidden;
+  }
+  
+  #flip > div > div {
+    color:#fff;
+    padding:4px 12px;
+    height:45px;
+    margin-bottom:45px;
+    display:inline-block;
+  }
+  
+  #flip div:first-child {
+    animation: show 5s linear infinite;
+  }
+  
+  #flip div div {
+    background:#4276c5;
+  }
+  #flip div:first-child div {
+    background:#4ec7f3;
+  }
+  #flip div:last-child div {
+    background:#DC143C;
+  }
+  @keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+  }
+
+/* referensi animasi : https://codepen.io/yemon/pen/pWoROm */

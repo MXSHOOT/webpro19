@@ -1,0 +1,16 @@
+/* element */
+th {
+    background-color: aqua;
+    color: black;
+}
+
+/* id */
+#kampus{
+    background-color: pink;
+    font-weight: bold;
+}
+
+/* class */
+p.ayo{
+    color: brown;
+}
