@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .kuning{
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        let div_nf=document.getElementById("nf");
+        function mulai(){
+            div_nf = div_nf=document.getElementById("nf")
+            div_nf.innerHTML="<h1>STT NF</h1>";
+            // div_nf.style.backgroundColor="Yellow";
+            div_nf.className="kuning";
+        }
+        function makeBlue(){
+            div_nf.style.color="white";
+            div_nf.style.backgroundColor="blue";
+        }
+        function makeYellow(){
+            div_nf.style.color="black";
+            div_nf.style.backgroundColor="yellow";
+        }
+        function pilih(){
+            let area_buah = document.getElementById("buah");
+
+            console.log("anda pilih !! "+list_buah[list_buah.selectedIndex].value);
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="mulai()">
+    <div id="nf" onmouseover="makeBlue()" onmouseout="makeYellow()"></div>
+
+    <form id="frm1">
+        Jus Buah : <select name="buah" id="buah" onclick="pilih()">
+            <option value="Jeruk">Jeruk</option>
+            <option value="Mangga">Mangga</option>
+            <option value="Sirsak">Sirsak</option>
+            <option value="Alpukat">Alpukat</option>
+        </select>
+    </form>
+</body>
+</html>

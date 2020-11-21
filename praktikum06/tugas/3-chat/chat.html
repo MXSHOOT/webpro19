@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html id="abc" name="name1">
+<head id="abc" name="name2">
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" id="abc">
+    function kirim() {
+     var a=document.getElementById("abc").innerHTML;
+     var b=document.getElementById("teks").value;
+     var c=document.getElementById("koment").value;
+     document.write(a + "<br />" + "<br />");
+     document.write("Nama : "+b + "<br />Comment : ");
+     document.write(c);
+  }
+</script>
+</head>
+<body>
+  
+<form>
+<h1>Masukkan komentar</h1><br /><br>
+Nama Anda :</br>
+<input type=text name="text" id="teks" size="35"><br /><br> 
+Komentar :</br>
+<textarea rows="1" name="koment" id="koment" cols="35" wrap="virtual"></textarea><br /><br>
+<input type="button" onclick="kirim()" value="Komentar" />
+<input name="Clear" type="reset" value="Batal" />
+</form><br />
+<button onclick="window.location.href='../pilihan.html'">Kembali Ke Menu</button>
+<hr style="border: 1px black;"></hr>
+<hr></hr>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <script>
+      var myMap= new Map();
+      myMap.set("pohon","https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg")
+      myMap.set("kupu","https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png")
+      myMap.set("musim","https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg")
+      myMap.set("sakura","https://cdn.pixabay.com/photo/2014/04/14/20/11/flowers-324175_960_720.jpg")
+      myMap.set("jalan","https://cdn.pixabay.com/photo/2015/06/19/21/24/the-road-815297_960_720.jpg")
+          function showImage(value) {
+            var a = document.getElementById('dropdown').value;
+              alert(a)
+              img.src=myMap.get(a);
+              document.getElementById("img").innerHTML=img.src
+                  }
+  </script>
+ <select id="dropdown" onchange="showImage(this.value)">
+    <option disabled value selected>THEME</option>
+    <option value="pohon">Pohon</option>
+    <option value="kupu">Kupu-kupu</option>
+    <option value="musim">Musim</option>
+    <option value="sakura">Sakura</option>
+    <option value="jalan">Jalanan</option>
+  </select>
+  <button onclick="window.location.href='../pilihan.html'">Kembali Ke Menu</button>
+<div>  <br/> <img id="img"><div>
+</body>
+</html>
+
+

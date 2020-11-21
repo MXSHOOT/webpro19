@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+	</head>
+	<title>Kurs Rupiah</title>
+<body>
+	<div class="col-md-6 well">
+		<h3 >Kurs Rupiah</h3>
+			<hr/>
+			<div>
+				<label>Vals</label><br/>
+				<select onchange="Currency(); Calculate()" id="converter" style="width:21%;">
+					<option value="Dollar US">Dollar US</option>
+					<option value="Dollar Singapore">Dollar Singapore</option>
+					<option value="Ringgit Malaysia">Ringgit Malaysia</option>
+					<option value="Yen Jepan">Yen Jepan</option>
+					<option value="Euro">Euro</option>
+					<option value="Riyal Arab Saudi">Riyal Arab Saudi</option>
+				</select>
+				<br /><br/>
+				<label>Masukan Nilai</label><br/>
+				<input type="number" oninput="Calculate()"  id="value1"/>
+			</div>
+			<br />
+				<label>Nilai Rupiah</label><br/>
+				<input type="number" id="value2" disabled="disabled"/>
+		</div>
+	</div>
+	<button onclick="window.location.href='../pilihan.html'">Kembali Ke Menu</button>
+</body>
+<script>
+	function Currency(){
+		y = document.getElementById("converter").value;
+		return y;
+	}
+	
+	function Calculate(){
+		y = Currency();
+		
+		x = document.getElementById("value1").value;
+		
+		if(x == ""){
+			document.getElementById("value2").value = "";
+		}else{
+			switch(y){
+				case "Dollar US":
+					document.getElementById("value2").value = x * 9915;
+				break;
+				
+				case "Dollar Singapore":
+					document.getElementById("value2").value = x * 13472;
+				break;
+				
+				case "Ringgit Malaysia":
+					document.getElementById("value2").value = x * 874;
+				break;
+				
+				case "Yen Jepan":
+					document.getElementById("value2").value = x * 120;
+				break;
+				
+				case "Euro":
+					document.getElementById("value2").value = x * 15888;
+				break;
+				case "Riyal Arab Saudi":
+					document.getElementById("value2").value = x * 3592;
+				break;
+			}
+		}
+	}
+</script>
+</html>

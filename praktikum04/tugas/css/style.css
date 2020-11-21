@@ -74,3 +74,19 @@ body {
   }
 
 /* referensi animasi : https://codepen.io/yemon/pen/pWoROm */
+
+/* Praktikum Mandiri
+Pada praktikum sebelumnya anda telah membuat halaman web (landing page) untuk web hotel /
+penginapan menggunakan HTML. Sekarang anda tambahkan style web menggunakan CSS agar
+websitenya lebih menarik. Lakukan penulisan CSS menggunakan eksternal style dan beri nama file stylesheet mystyle.css, pada
+praktikum CSS ini anda diminta implementasi minimal property-property CSS berikut ini telah ada pada
+web anda:
+ Background: background-color , background-image
+ Text dan Font: : textalign, textdecoration, lineheight, fontsize, fontweight, fontstyle
+ Box Model : margin, border, padding, width
+ Position dan display : position, float, display
+ Navigation dan List : list-style
+Selain dari property-property diatas anda juga diminta untuk mencoba transisi dan animasi CSS
+sederhana. Aturan Pengerjaan
+a. Hasil pekerjaan di commit ke server github anda sesuai dengan project praktikum 3 ini
+b. Dilarang keras melakukan plagiarisme */

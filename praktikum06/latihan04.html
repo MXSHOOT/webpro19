@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script language="JavaScript">
+        function Penjumlahan() {
+            let bilangan01 = document.getElementById("b1").value;
+            let bilangan02 = document.getElementById("b2").value;
+            
+            console.log(bilangan01 + bilangan02);
+            let b1 = parseInt(bilangan01);
+            let b2 = parseInt(bilangan02);
+
+            console.log(b1 + b2);
+            let hasilb = b1 + b2;
+
+            document.getElementById("hasil").innerHTML = hasilb;
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Mobil</title>
+</head>
+<body>
+    <form>
+        Bilangan 1: <input type="text" id="b1" />
+        Bilangan 2: <input type="text" id="b2" />
+        <input type="button" value="Hitung" onclick="Penjumlahan();" />
+        <h1 id="hasil"></h1>
+    </form>
+</body>
+</html>
