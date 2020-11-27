@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Petis Tuna Madura</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <a href="#" class="nav__logo">Petis Madura</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Descripcion</a></li>
+                        <li class="nav__item"><a href="#l-section" class="nav__link">Buy</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__actions">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <img src="assets/icons/bx-chevron-down.svg" alt="">
+                    </div>
+                    <a href="https://www.linkedin.com/in/faris-ar-rasyid-532720161/" class="nav__btn">About</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- HOME -->
+        <main class="l-main bd-grid">
+            <section class="home">
+                <div class="home__data">
+                    <h1 class="home__title">Petis </h1>
+                    <p class="home__description">Petis Utama Madura terbuat dari komposisi Sari Ikan Laut dan bumbu-bumbu lainnya. <br><!-- GSAP -->HALAL.</p>
+                </div>
+    
+                <div class="home__img">
+                    <!-- IMG -->
+                    <img src="assets/img/Petes1.png" alt="" class="petis1">
+                </div>
+    
+                <div class="home__scroll">
+                    <span class="home__scroll-text">Scroll down for more</span>
+                    <a href="#l-section"><img src="assets/icons/bx-mouse.svg" alt="" class="home__scroll-icon"></a>
+                </div>
+            </section>
+
+            <!-- DETAILS PETIS -->
+            <section class="l-section" id="l-section">
+                <div class="details">
+                    <div class="details__content">
+                        <div class="details__box">
+                            <span class="details__initial">TokoPedia</span><br>
+                            <a href="https://www.tokopedia.com/search?st=product&q=petis&navsource=home">
+                            <img src="assets/img/tokeped.png" alt="" class="details__title" style="width: 90px;"></a>
+                        </div>
+                        <div class="details__box">
+                            <span class="details__initial">Bukalapak</span><br>
+                            <a href="https://www.bukalapak.com/products?from=omnisearch&from_keyword_history=false&search%5Bkeywords%5D=petis&search_source=omnisearch_keyword&source=navbar">
+                            <img src="assets/img/bukal.png" alt="" class="details__title" style="width: 90px;"></a>
+                        </div>
+                        <div class="details__box">
+                            <span class="details__initial">Github</span><br>
+                            <a href="https://github.com/MXSHOOT">
+                            <img src="assets/img/github.png" alt="" class="details__title" style="width: 90px;">
+                            </a>
+                            <p class="details__description">Faris Ar Rasyi</p>
+                        </div>
+                    </div>
+
+                    <div class="details__img">
+                        <img src="assets/img/Petes.png" alt="" class="petis2">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        <!-- TIMELINE MAX -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+
+        <!-- SCROLLMAGIC -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+        
+        <!-- MAIN -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
